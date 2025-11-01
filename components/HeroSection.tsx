@@ -117,8 +117,10 @@ export default function HeroSection() {
               style={{
                 minWidth: '100%',
                 maxWidth: '100%',
+                maxHeight: '800px',
                 height: '600px',
                 border: 'none',
+                overflowY: 'auto'
               }}
               scrolling="no"
             ></iframe>
