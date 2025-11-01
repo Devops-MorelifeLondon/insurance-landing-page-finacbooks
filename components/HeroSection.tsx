@@ -117,7 +117,7 @@ export default function HeroSection() {
               style={{
                 minWidth: '100%',
                 maxWidth: '100%',
-                height: '739px',
+                height: '600px',
                 border: 'none',
               }}
               scrolling="no"
