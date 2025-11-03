@@ -28,7 +28,7 @@ export default function CTASection() {
                 className="inline-flex items-center justify-center gap-2 bg-white text-[#00afef] px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 focus:outline-none focus:ring-4 focus:ring-white/50 transition-all duration-300 transform hover:scale-105"
                 aria-label="Get My Free Quote"
               >
-                Get My Free Quote
+                Get In Touch
                 <ArrowRight size={20} />
               </button>
             </div>
