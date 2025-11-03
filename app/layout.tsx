@@ -8,10 +8,9 @@ const open = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Secure Your Family’s Future for Just ₹500/month* | Finacbooks Term Life Insurance in UP',
-  description: 'Affordable term life cover up to ₹1 Cr from ₹500/month*. Instant online quotes for residents in Lucknow, Kanpur, Varanasi, Noida, Ghaziabad, and major UP cities. Get protected with Finacbooks – high coverage, tax benefits, and easy online purchase.',
-};
-
-
+  description:
+    'Affordable term life cover up to ₹1 Cr from ₹500/month*. Instant online quotes for residents in Lucknow, Kanpur, Varanasi, Noida, Ghaziabad, and major UP cities. Get protected with Finacbooks – high coverage, tax benefits, and easy online purchase.',
+}
 
 export default function RootLayout({
   children,
@@ -27,11 +26,25 @@ export default function RootLayout({
           as="document"
           href="https://form.jotform.com/253041831403041"
         />
-
-      
       </head>
 
-      <body className={open.className}>{children}</body>
+      <body className={open.className}>
+        {/* ✅ Google Ads Tag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-810525438"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-810525438');
+          `}
+        </Script>
+
+        {children}
+      </body>
     </html>
   )
 }
